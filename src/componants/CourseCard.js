@@ -6,8 +6,10 @@ function CourseCard(props) {
     <div key={obj.id} className="course-card swiper-slide">
       <img className="course-image" src={obj["image"]} alt={obj["title"]}></img>
       <h3 className="course-title">{obj["title"]}</h3>
-      <p className="course-author">{obj["author"]}</p>
-      <span className="rate">{obj["rating"] + " "}</span>
+      <p className="course-author">{obj["author"][0]["name"]}</p>
+      <span className="rate">
+        {+obj["rating"].toString().substr(0, 3) + " "}
+      </span>
       <i className="fa-solid fa-star"></i>
       <i className="fa-solid fa-star"></i>
       <i className="fa-solid fa-star"></i>
