@@ -15,7 +15,7 @@ function CourseCard(props) {
       <i className="fa-solid fa-star"></i>
       <i className="fa-solid fa-star"></i>
       <i className="fa-solid fa-star-half-stroke"></i>
-      <span className="students">{" (" + obj["people"] + ")"}</span>
+      <span className="students">{obj["people"]}</span>
       <h3 className="price">{"E€" + obj["price"]}</h3>
     </div>
   );
